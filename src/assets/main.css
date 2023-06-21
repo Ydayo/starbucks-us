@@ -1,0 +1,133 @@
+section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.starItem {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.starItem:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.starItem:nth-child(2) .itemLeft {
+  background-color: #92cbff;
+}
+
+.starItem:nth-child(2) .itemLeft > button {
+  border: 1px solid#00376b;
+  color: #00376b !important;
+}
+
+.starItem:nth-child(2) .itemLeft > h1,
+.starItem:nth-child(2) .itemLeft > p {
+  color: #00376b !important;
+}
+
+.starItem:nth-child(3) .itemLeft > button {
+  color: #00111f;
+  border: 1px solid #00111f;
+}
+
+.starItem:nth-child(3) .itemLeft > h1,
+.starItem:nth-child(3) .itemLeft > p {
+  color: #00111f !important;
+}
+
+.starItem:nth-child(3) .itemLeft {
+  background-color: #eb81a5;
+}
+
+.starItem:nth-child(4) .itemLeft > button {
+  border: 1px solid #002e1f;
+  color: #002e1f;
+}
+
+.starItem:nth-child(4) .itemLeft > h1,
+.starItem:nth-child(4) .itemLeft > p {
+  color: #002e1f;
+}
+
+.starItem:nth-child(4) .itemLeft {
+  background-color: #cbe678;
+}
+
+.itemLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #006241;
+  padding: 50px;
+  width: 50%;
+}
+
+.itemLeft > h1 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.itemLeft > p {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.itemLeft > button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  font-size: 17px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.itemLeft > button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.itemRight {
+  width: 50%;
+}
+
+.itemRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainBottom {
+  font-size: 14px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 900px) {
+  .starItem {
+    width: 100%;
+    flex-direction: column-reverse;
+    /* gap: 0; */
+  }
+  .itemLeft {
+    width: 100%;
+  }
+  .itemRight {
+    width: 100%;
+    /* height: 400px; */
+  }
+  .starItem:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+
+  .mainBottom {
+    margin: 30px 20px;
+  }
+}
